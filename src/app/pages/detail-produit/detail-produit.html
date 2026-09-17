@@ -1,1 +1,28 @@
-<p>detail-produit works!</p>
+@if (vetement) {
+  <div class="detail-produit">
+    <a routerLink="/" class="retour">← Retour au catalogue</a>
+
+    <h1>{{ vetement.nom }}</h1>
+    <span class="categorie-tag">{{ vetement.categorie }}</span>
+
+    <p class="prix-detail">{{ vetement.prix }} FCFA</p>
+
+    <div class="infos-detail">
+      <p><strong>Taille :</strong> {{ vetement.taille }}</p>
+      <p><strong>État :</strong> {{ vetement.etat }}</p>
+    </div>
+
+    <p class="description">{{ vetement.description }}</p>
+
+    @if (vetement.disponible) {
+      <span class="badge disponible">Disponible</span>
+    } @else {
+      <span class="badge indisponible">Rupture de stock</span>
+    }
+  </div>
+} @else {
+  <div class="detail-produit">
+    <p>Produit introuvable.</p>
+    <a routerLink="/">← Retour au catalogue</a>
+  </div>
+}
