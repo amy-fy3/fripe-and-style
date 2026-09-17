@@ -1,1 +1,21 @@
-<p>accueil works!</p>
+<div class="catalogue">
+  <h1>Notre catalogue</h1>
+
+  <div class="grille-produits">
+    @for (vetement of vetements; track vetement.id) {
+      <a [routerLink]="['/produit', vetement.id]" class="carte-produit">
+        <div class="carte-header">
+          <span class="categorie-tag">{{ vetement.categorie }}</span>
+          @if (vetement.disponible) {
+            <span class="badge disponible">Disponible</span>
+          } @else {
+            <span class="badge indisponible">Rupture</span>
+          }
+        </div>
+        <h3>{{ vetement.nom }}</h3>
+        <p class="taille-etat">Taille {{ vetement.taille }} · {{ vetement.etat }}</p>
+        <p class="prix">{{ vetement.prix }} FCFA</p>
+      </a>
+    }
+  </div>
+</div>
