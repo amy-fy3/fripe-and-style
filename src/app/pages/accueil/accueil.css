@@ -1,0 +1,81 @@
+.catalogue {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.catalogue h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.grille-produits {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.carte-produit {
+  display: block;
+  background-color: white;
+  border: 1px solid var(--gris-clair);
+  border-radius: 12px;
+  padding: 1.3rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carte-produit:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: var(--corail);
+}
+
+.carte-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.categorie-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gris);
+  font-weight: 600;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.badge.disponible {
+  background-color: rgba(45, 106, 79, 0.12);
+  color: var(--vert);
+}
+
+.badge.indisponible {
+  background-color: rgba(192, 57, 43, 0.12);
+  color: var(--rouge);
+}
+
+.carte-produit h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.taille-etat {
+  font-size: 0.85rem;
+  color: var(--gris);
+  margin-bottom: 0.7rem;
+}
+
+.prix {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--corail);
+}

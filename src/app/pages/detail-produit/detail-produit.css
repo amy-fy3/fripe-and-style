@@ -1,0 +1,52 @@
+.detail-produit {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.retour {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--gris);
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.retour:hover {
+  color: var(--corail);
+}
+
+.detail-produit h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-produit .categorie-tag {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+}
+
+.prix-detail {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--corail);
+  margin-bottom: 1.5rem;
+}
+
+.infos-detail {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--gris-clair);
+}
+
+.infos-detail p {
+  font-size: 0.95rem;
+}
+
+.description {
+  color: var(--gris);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}

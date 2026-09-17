@@ -1,0 +1,17 @@
+.footer {
+  background-color: var(--noir);
+  color: var(--fond);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.footer p {
+  font-size: 0.85rem;
+}
+
+.sous-texte {
+  color: var(--gris-clair);
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+}
