@@ -1,0 +1,21 @@
+.a-propos {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.a-propos h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.a-propos h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.a-propos p {
+  color: var(--gris);
+  margin-bottom: 1rem;
+}
